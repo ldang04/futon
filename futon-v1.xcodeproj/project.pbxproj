@@ -51,6 +51,11 @@
 		FEC16F882BB8740900FFA357 /* futon-v1 */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16F9B2BB8761100FFA357 /* Fonts */,
+				FEC16F9A2BB8760900FFA357 /* Views */,
+				FEC16F992BB8760100FFA357 /* Models */,
+				FEC16F982BB875F900FFA357 /* HelperViews */,
+				FEC16F972BB875F000FFA357 /* Helpers */,
 				FEC16F892BB8740900FFA357 /* futon_v1App.swift */,
 				FEC16F8B2BB8740900FFA357 /* ContentView.swift */,
 				FEC16F8D2BB8740B00FFA357 /* Assets.xcassets */,
@@ -65,6 +70,57 @@
 				FEC16F902BB8740B00FFA357 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEC16F972BB875F000FFA357 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FEC16F982BB875F900FFA357 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		FEC16F992BB8760100FFA357 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEC16F9A2BB8760900FFA357 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEC16F9C2BB8762900FFA357 /* AuthSubviews */,
+				FEC16F9D2BB8763100FFA357 /* RequestSubviews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEC16F9B2BB8761100FFA357 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FEC16F9C2BB8762900FFA357 /* AuthSubviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthSubviews;
+			sourceTree = "<group>";
+		};
+		FEC16F9D2BB8763100FFA357 /* RequestSubviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestSubviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
