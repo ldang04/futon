@@ -16,6 +16,7 @@
 		FE115AA62BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9F2BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf */; };
 		FE115AA82BB892AE00AB66C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE115AA72BB892AE00AB66C1 /* UserInfo.swift */; };
 		FE115AAA2BB8933200AB66C1 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE115AA92BB8933200AB66C1 /* PopUp.swift */; };
+		FE115AAC2BB8B48700AB66C1 /* UserAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE115AAB2BB8B48700AB66C1 /* UserAbout.swift */; };
 		FE2DC24C2BB882E700264452 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DC24B2BB882E700264452 /* Test.swift */; };
 		FEC16F8A2BB8740900FFA357 /* futon_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16F892BB8740900FFA357 /* futon_v1App.swift */; };
 		FEC16F8C2BB8740900FFA357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16F8B2BB8740900FFA357 /* ContentView.swift */; };
@@ -50,6 +51,7 @@
 		FE115A9F2BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Bold.ttf"; sourceTree = "<group>"; };
 		FE115AA72BB892AE00AB66C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FE115AA92BB8933200AB66C1 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		FE115AAB2BB8B48700AB66C1 /* UserAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAbout.swift; sourceTree = "<group>"; };
 		FE2DC24B2BB882E700264452 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		FEC16F862BB8740900FFA357 /* futon-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "futon-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC16F892BB8740900FFA357 /* futon_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = futon_v1App.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				FEC16FAC2BB87CFF00FFA357 /* Connect.swift */,
 				FEC16FAE2BB87D1200FFA357 /* HostQ.swift */,
 				FE115AA72BB892AE00AB66C1 /* UserInfo.swift */,
+				FE115AAB2BB8B48700AB66C1 /* UserAbout.swift */,
 			);
 			path = AuthSubviews;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FEC16FAB2BB87CE100FFA357 /* User.swift in Sources */,
 				FEC16FA52BB87C8800FFA357 /* auth.swift in Sources */,
 				FEC16FBD2BB87DA200FFA357 /* ProfileView.swift in Sources */,
+				FE115AAC2BB8B48700AB66C1 /* UserAbout.swift in Sources */,
 				FEC16FB92BB87D7B00FFA357 /* CalendarView.swift in Sources */,
 				FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */,
 				FE2DC24C2BB882E700264452 /* Test.swift in Sources */,
