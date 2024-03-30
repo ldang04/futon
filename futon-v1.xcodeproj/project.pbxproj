@@ -7,18 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE115AA02BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */; };
+		FE115AA12BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */; };
+		FE115AA22BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */; };
+		FE115AA32BB88C8A00AB66C1 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9C2BB88C8A00AB66C1 /* BricolageGrotesque-SemiBold.ttf */; };
+		FE115AA42BB88C8A00AB66C1 /* BricolageGrotesque-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9D2BB88C8A00AB66C1 /* BricolageGrotesque-Light.ttf */; };
+		FE115AA52BB88C8A00AB66C1 /* BricolageGrotesque-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9E2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraBold.ttf */; };
+		FE115AA62BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9F2BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf */; };
+		FE115AA82BB892AE00AB66C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE115AA72BB892AE00AB66C1 /* UserInfo.swift */; };
+		FE115AAA2BB8933200AB66C1 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE115AA92BB8933200AB66C1 /* PopUp.swift */; };
+		FE2DC24C2BB882E700264452 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DC24B2BB882E700264452 /* Test.swift */; };
 		FEC16F8A2BB8740900FFA357 /* futon_v1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16F892BB8740900FFA357 /* futon_v1App.swift */; };
 		FEC16F8C2BB8740900FFA357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16F8B2BB8740900FFA357 /* ContentView.swift */; };
 		FEC16F8E2BB8740B00FFA357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC16F8D2BB8740B00FFA357 /* Assets.xcassets */; };
 		FEC16F912BB8740B00FFA357 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC16F902BB8740B00FFA357 /* Preview Assets.xcassets */; };
+		FEC16FA02BB87BD200FFA357 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FEC16F9F2BB87BD200FFA357 /* Kingfisher */; };
+		FEC16FA32BB87BE300FFA357 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = FEC16FA22BB87BE300FFA357 /* WrappingHStack */; };
+		FEC16FA52BB87C8800FFA357 /* auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FA42BB87C8800FFA357 /* auth.swift */; };
+		FEC16FA72BB87CA800FFA357 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FA62BB87CA800FFA357 /* GlobalHelpers.swift */; };
+		FEC16FA92BB87CBF00FFA357 /* RequestBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FA82BB87CBF00FFA357 /* RequestBox.swift */; };
+		FEC16FAB2BB87CE100FFA357 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FAA2BB87CE100FFA357 /* User.swift */; };
+		FEC16FAD2BB87CFF00FFA357 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FAC2BB87CFF00FFA357 /* Connect.swift */; };
+		FEC16FAF2BB87D1200FFA357 /* HostQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FAE2BB87D1200FFA357 /* HostQ.swift */; };
+		FEC16FB12BB87D2A00FFA357 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FB02BB87D2A00FFA357 /* Login.swift */; };
+		FEC16FB32BB87D3600FFA357 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FB22BB87D3600FFA357 /* Register.swift */; };
+		FEC16FB52BB87D4600FFA357 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FB42BB87D4600FFA357 /* Start.swift */; };
+		FEC16FB72BB87D5F00FFA357 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FB62BB87D5F00FFA357 /* AuthView.swift */; };
+		FEC16FB92BB87D7B00FFA357 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FB82BB87D7B00FFA357 /* CalendarView.swift */; };
+		FEC16FBB2BB87D9000FFA357 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FBA2BB87D9000FFA357 /* HomeView.swift */; };
+		FEC16FBD2BB87DA200FFA357 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FBC2BB87DA200FFA357 /* ProfileView.swift */; };
+		FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FBE2BB87DB900FFA357 /* RequestProfile.swift */; };
+		FEC16FC12BB87DDC00FFA357 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FC02BB87DDC00FFA357 /* RequestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Medium.ttf"; sourceTree = "<group>"; };
+		FE115A9C2BB88C8A00AB66C1 /* BricolageGrotesque-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-SemiBold.ttf"; sourceTree = "<group>"; };
+		FE115A9D2BB88C8A00AB66C1 /* BricolageGrotesque-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Light.ttf"; sourceTree = "<group>"; };
+		FE115A9E2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FE115A9F2BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Bold.ttf"; sourceTree = "<group>"; };
+		FE115AA72BB892AE00AB66C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FE115AA92BB8933200AB66C1 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		FE2DC24B2BB882E700264452 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		FEC16F862BB8740900FFA357 /* futon-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "futon-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC16F892BB8740900FFA357 /* futon_v1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = futon_v1App.swift; sourceTree = "<group>"; };
 		FEC16F8B2BB8740900FFA357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEC16F8D2BB8740B00FFA357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC16F902BB8740B00FFA357 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEC16FA42BB87C8800FFA357 /* auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth.swift; sourceTree = "<group>"; };
+		FEC16FA62BB87CA800FFA357 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		FEC16FA82BB87CBF00FFA357 /* RequestBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBox.swift; sourceTree = "<group>"; };
+		FEC16FAA2BB87CE100FFA357 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEC16FAC2BB87CFF00FFA357 /* Connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
+		FEC16FAE2BB87D1200FFA357 /* HostQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostQ.swift; sourceTree = "<group>"; };
+		FEC16FB02BB87D2A00FFA357 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FEC16FB22BB87D3600FFA357 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		FEC16FB42BB87D4600FFA357 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		FEC16FB62BB87D5F00FFA357 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		FEC16FB82BB87D7B00FFA357 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FEC16FBA2BB87D9000FFA357 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FEC16FBC2BB87DA200FFA357 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FEC16FBE2BB87DB900FFA357 /* RequestProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProfile.swift; sourceTree = "<group>"; };
+		FEC16FC02BB87DDC00FFA357 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		FEC16FC92BB87EF700FFA357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC16FA32BB87BE300FFA357 /* WrappingHStack in Frameworks */,
+				FEC16FA02BB87BD200FFA357 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +106,7 @@
 		FEC16F882BB8740900FFA357 /* futon-v1 */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16FC92BB87EF700FFA357 /* Info.plist */,
 				FEC16F9B2BB8761100FFA357 /* Fonts */,
 				FEC16F9A2BB8760900FFA357 /* Views */,
 				FEC16F992BB8760100FFA357 /* Models */,
@@ -60,6 +116,7 @@
 				FEC16F8B2BB8740900FFA357 /* ContentView.swift */,
 				FEC16F8D2BB8740B00FFA357 /* Assets.xcassets */,
 				FEC16F8F2BB8740B00FFA357 /* Preview Content */,
+				FE2DC24B2BB882E700264452 /* Test.swift */,
 			);
 			path = "futon-v1";
 			sourceTree = "<group>";
@@ -75,6 +132,8 @@
 		FEC16F972BB875F000FFA357 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16FA42BB87C8800FFA357 /* auth.swift */,
+				FEC16FA62BB87CA800FFA357 /* GlobalHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -82,6 +141,8 @@
 		FEC16F982BB875F900FFA357 /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16FA82BB87CBF00FFA357 /* RequestBox.swift */,
+				FE115AA92BB8933200AB66C1 /* PopUp.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -89,6 +150,7 @@
 		FEC16F992BB8760100FFA357 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16FAA2BB87CE100FFA357 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +160,11 @@
 			children = (
 				FEC16F9C2BB8762900FFA357 /* AuthSubviews */,
 				FEC16F9D2BB8763100FFA357 /* RequestSubviews */,
+				FEC16FB62BB87D5F00FFA357 /* AuthView.swift */,
+				FEC16FB82BB87D7B00FFA357 /* CalendarView.swift */,
+				FEC16FBA2BB87D9000FFA357 /* HomeView.swift */,
+				FEC16FBC2BB87DA200FFA357 /* ProfileView.swift */,
+				FEC16FC02BB87DDC00FFA357 /* RequestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +172,13 @@
 		FEC16F9B2BB8761100FFA357 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FE115A9F2BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf */,
+				FE115A9E2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraBold.ttf */,
+				FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */,
+				FE115A9D2BB88C8A00AB66C1 /* BricolageGrotesque-Light.ttf */,
+				FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */,
+				FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */,
+				FE115A9C2BB88C8A00AB66C1 /* BricolageGrotesque-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -112,6 +186,12 @@
 		FEC16F9C2BB8762900FFA357 /* AuthSubviews */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16FB42BB87D4600FFA357 /* Start.swift */,
+				FEC16FB02BB87D2A00FFA357 /* Login.swift */,
+				FEC16FB22BB87D3600FFA357 /* Register.swift */,
+				FEC16FAC2BB87CFF00FFA357 /* Connect.swift */,
+				FEC16FAE2BB87D1200FFA357 /* HostQ.swift */,
+				FE115AA72BB892AE00AB66C1 /* UserInfo.swift */,
 			);
 			path = AuthSubviews;
 			sourceTree = "<group>";
@@ -119,6 +199,7 @@
 		FEC16F9D2BB8763100FFA357 /* RequestSubviews */ = {
 			isa = PBXGroup;
 			children = (
+				FEC16FBE2BB87DB900FFA357 /* RequestProfile.swift */,
 			);
 			path = RequestSubviews;
 			sourceTree = "<group>";
@@ -139,6 +220,10 @@
 			dependencies = (
 			);
 			name = "futon-v1";
+			packageProductDependencies = (
+				FEC16F9F2BB87BD200FFA357 /* Kingfisher */,
+				FEC16FA22BB87BE300FFA357 /* WrappingHStack */,
+			);
 			productName = "futon-v1";
 			productReference = FEC16F862BB8740900FFA357 /* futon-v1.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +252,10 @@
 				Base,
 			);
 			mainGroup = FEC16F7D2BB8740900FFA357;
+			packageReferences = (
+				FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FEC16FA12BB87BE300FFA357 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = FEC16F872BB8740900FFA357 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,8 +270,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE115AA62BB88C8A00AB66C1 /* BricolageGrotesque-Bold.ttf in Resources */,
+				FE115AA02BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf in Resources */,
+				FE115AA22BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf in Resources */,
+				FE115AA52BB88C8A00AB66C1 /* BricolageGrotesque-ExtraBold.ttf in Resources */,
 				FEC16F912BB8740B00FFA357 /* Preview Assets.xcassets in Resources */,
+				FE115AA42BB88C8A00AB66C1 /* BricolageGrotesque-Light.ttf in Resources */,
 				FEC16F8E2BB8740B00FFA357 /* Assets.xcassets in Resources */,
+				FE115AA32BB88C8A00AB66C1 /* BricolageGrotesque-SemiBold.ttf in Resources */,
+				FE115AA12BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +289,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE115AA82BB892AE00AB66C1 /* UserInfo.swift in Sources */,
+				FEC16FA92BB87CBF00FFA357 /* RequestBox.swift in Sources */,
+				FEC16FC12BB87DDC00FFA357 /* RequestView.swift in Sources */,
+				FEC16FBB2BB87D9000FFA357 /* HomeView.swift in Sources */,
+				FEC16FB52BB87D4600FFA357 /* Start.swift in Sources */,
+				FEC16FB72BB87D5F00FFA357 /* AuthView.swift in Sources */,
+				FE115AAA2BB8933200AB66C1 /* PopUp.swift in Sources */,
 				FEC16F8C2BB8740900FFA357 /* ContentView.swift in Sources */,
+				FEC16FAB2BB87CE100FFA357 /* User.swift in Sources */,
+				FEC16FA52BB87C8800FFA357 /* auth.swift in Sources */,
+				FEC16FBD2BB87DA200FFA357 /* ProfileView.swift in Sources */,
+				FEC16FB92BB87D7B00FFA357 /* CalendarView.swift in Sources */,
+				FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */,
+				FE2DC24C2BB882E700264452 /* Test.swift in Sources */,
+				FEC16FB32BB87D3600FFA357 /* Register.swift in Sources */,
+				FEC16FAD2BB87CFF00FFA357 /* Connect.swift in Sources */,
+				FEC16FAF2BB87D1200FFA357 /* HostQ.swift in Sources */,
+				FEC16FB12BB87D2A00FFA357 /* Login.swift in Sources */,
+				FEC16FA72BB87CA800FFA357 /* GlobalHelpers.swift in Sources */,
 				FEC16F8A2BB8740900FFA357 /* futon_v1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +440,7 @@
 				DEVELOPMENT_TEAM = TBBJC4T54A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "futon-v1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +470,7 @@
 				DEVELOPMENT_TEAM = TBBJC4T54A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "futon-v1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -395,6 +511,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FEC16FA12BB87BE300FFA357 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEC16F9F2BB87BD200FFA357 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FEC16FA22BB87BE300FFA357 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEC16FA12BB87BE300FFA357 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEC16F7E2BB8740900FFA357 /* Project object */;
 }

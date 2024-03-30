@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "branch" : "master",
+        "revision" : "cfca8f8b9b654679908264d488fe8761e1571e22"
+      }
+    },
+    {
+      "identity" : "wrappinghstack",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dkk/WrappingHStack",
+      "state" : {
+        "branch" : "main",
+        "revision" : "425d9488ba55f58f0b34498c64c054c77fc2a44b"
+      }
+    }
+  ],
+  "version" : 2
+}
