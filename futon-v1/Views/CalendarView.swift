@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @State private var date = Date()
+    
     var body: some View {
         ZStack {
             Color("futonLightGray")
@@ -29,7 +31,18 @@ struct CalendarView: View {
                     
                     Spacer()
                 }
-                   
+                VStack{
+                    DatePicker(
+                            "Start Date",
+                            selection: $date,
+                            displayedComponents: [.date]
+                        )
+                        .datePickerStyle(.graphical)
+                        
+                }
+                .background(Color.white)
+                .cornerRadius(16)
+                .padding()
                 
                 Spacer()
             }
@@ -37,6 +50,7 @@ struct CalendarView: View {
         }
     }
 }
+
 
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {

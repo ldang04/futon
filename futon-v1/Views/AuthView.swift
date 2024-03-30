@@ -62,15 +62,6 @@ struct AuthView: View {
     }
 }
 
-struct UserAbout: View {
-    @Binding var currentState: Int
-    var body: some View {
-        ZStack {
-            Text("UserPopUp")
-        }
-    }
-}
-
 struct UserBio: View {
     @Binding var currentState: Int
     var body: some View {
