@@ -34,7 +34,7 @@ struct Start: View {
                 
                 if(started == false){ // get started detail
                     VStack {
-                        Text("Fill your network with your mutual friends")
+                        Text("Learn new things. \nMeet new people.\ngrab a futon.")
                             .textCase(.uppercase)
                             .font(.custom("BricolageGrotesque-Regular", size: 20))
                             .fontWeight(.bold)

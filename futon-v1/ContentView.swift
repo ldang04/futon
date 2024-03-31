@@ -80,13 +80,13 @@ enum TabItems: Int, CaseIterable {
     var icon: String {
         switch self {
         case .home:
-            return "house"
+            return "house_icon"
         case .request:
-            return "envelope"
+            return "mail_icon"
         case .calendar:
-            return "calendar.circle"
+            return "calendar_icon"
         case .profile:
-            return "person"
+            return "profile_icon"
         }
     }
 }
@@ -95,7 +95,7 @@ extension MainTabView{
     func CustomTabItem(imageName: String, isActive: Bool) -> some View{
         HStack(spacing: 10){
             Spacer()
-            Text(Image(systemName: isActive ? "\(imageName).fill" : imageName))
+            Text(Image(isActive ? "\(imageName).fill" : imageName))
                 .font(.system(size: 30))
                 .foregroundColor(.black)
             

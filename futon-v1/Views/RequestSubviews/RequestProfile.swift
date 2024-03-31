@@ -12,6 +12,7 @@ import WrappingHStack
 struct RequestProfile: View {
     var user: User
     
+    @State var isPresented = false
     @State var viewProfile = false
     
     var circleColorOuter: Color { // computed property
@@ -85,7 +86,7 @@ struct RequestProfile: View {
                             .padding(.bottom, 50)
                         
                         Button {
-                            
+                            isPresented = true
                         } label: {
                             ZStack {
                                 Text("Yes, start chat")
@@ -146,7 +147,7 @@ struct RequestProfile: View {
                     .padding(.bottom, 20)
                     
                     Button { // @todo create chat screen
-                        
+                        isPresented = true
                     } label: {
                         Text("Start chat")
                             .fontWeight(.medium)
@@ -161,6 +162,9 @@ struct RequestProfile: View {
                 }
                 
             }
+        }
+        .sheet(isPresented: $isPresented){
+            ChatView(user: user)
         }
     }
 }

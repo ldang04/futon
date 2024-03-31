@@ -73,7 +73,7 @@ struct RequestView: View {
                     ScrollView { // dynamic forEach
                         VStack {
                             ForEach(hostRequests ?? [], id: \.self.reason){ request in
-                                RequestBox(request: request, id: request.guest)
+                                RequestBox(type: 1, request: request, id: request.guest)
                                     .padding(.bottom, 3)
                             }
                         }
@@ -84,7 +84,7 @@ struct RequestView: View {
                     ScrollView {
                         VStack {
                             ForEach(guestRequests ?? [], id: \.self.reason){ request in
-                                RequestBox(request: request, id: request.host)
+                                RequestBox(type: 0, request: request, id: request.host)
                                     .padding(.bottom, 3)
                             }
                         }

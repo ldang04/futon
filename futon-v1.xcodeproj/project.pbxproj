@@ -13,6 +13,7 @@
 		DB46206B2BB9561A00D92B91 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = DB46206A2BB9561A00D92B91 /* Realtime */; };
 		DB46206D2BB9561A00D92B91 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = DB46206C2BB9561A00D92B91 /* Storage */; };
 		DB46206F2BB9561A00D92B91 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB46206E2BB9561A00D92B91 /* Supabase */; };
+		DB4620712BB98E1600D92B91 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4620702BB98E1600D92B91 /* ChatView.swift */; };
 		FE115AA02BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */; };
 		FE115AA12BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */; };
 		FE115AA22BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */; };
@@ -67,6 +68,7 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		DB4620702BB98E1600D92B91 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Regular.ttf"; sourceTree = "<group>"; };
 		FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-ExtraLight.ttf"; sourceTree = "<group>"; };
 		FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Medium.ttf"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				FEC16FA82BB87CBF00FFA357 /* RequestBox.swift */,
 				FE115AA92BB8933200AB66C1 /* PopUp.swift */,
 				FEF3A7E32BB92AF700DBCCF5 /* SwipeView.swift */,
+				DB4620702BB98E1600D92B91 /* ChatView.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				FEF3A7E92BB941E700DBCCF5 /* HostLocation .swift in Sources */,
 				FEC16FBB2BB87D9000FFA357 /* HomeView.swift in Sources */,
 				FEC16FB52BB87D4600FFA357 /* Start.swift in Sources */,
+				DB4620712BB98E1600D92B91 /* ChatView.swift in Sources */,
 				FEC16FB72BB87D5F00FFA357 /* AuthView.swift in Sources */,
 				FE115AAA2BB8933200AB66C1 /* PopUp.swift in Sources */,
 				FEC16F8C2BB8740900FFA357 /* ContentView.swift in Sources */,

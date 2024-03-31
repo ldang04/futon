@@ -16,6 +16,12 @@ struct UserAbout: View {
     @State var noSelected = false
     @State var allergies = ""
     
+    
+    @State var clicked1 = false
+    @State var clicked2 = false
+    @State var clicked3 = false
+    @State var clicked4 = false
+
     var body: some View {
         ZStack {
             Color("futonLightGray")
@@ -60,53 +66,12 @@ struct UserAbout: View {
                     Text("Graduation Year")
                     
                     HStack {
-                        Button {
-                           graduationYear = 2024
-                        } label: {
-                            ZStack {
-                                Text("2024")
-                                RoundedRectangle(cornerRadius: 30)
-                                    .stroke(.black)
-                                    .frame(width: 75, height: 34)
-                            }
-                        }
-                        .foregroundColor(.black)
                         
-                        Button {
-                           graduationYear = 2025
-                        } label: {
-                            ZStack {
-                                Text("2025")
-                                RoundedRectangle(cornerRadius: 30)
-                                    .stroke(.black)
-                                    .frame(width: 75, height: 34)
-                            }
-                        }
-                        .foregroundColor(.black)
-                        
-                        Button {
-                           graduationYear = 2026
-                        } label: {
-                            ZStack {
-                                Text("2026")
-                                RoundedRectangle(cornerRadius: 30)
-                                    .stroke(.black)
-                                    .frame(width: 75, height: 34)
-                            }
-                        }
-                        .foregroundColor(.black)
-                        
-                        Button {
-                           graduationYear = 2027
-                        } label: {
-                            ZStack {
-                                Text("2027")
-                                RoundedRectangle(cornerRadius: 30)
-                                    .stroke(.black)
-                                    .frame(width: 75, height: 34)
-                            }
-                        }
-                        .foregroundColor(.black)
+                        clickedBtn(clicked: $clicked1, year: 2024)
+                        clickedBtn(clicked: $clicked2, year: 2025)
+                        clickedBtn(clicked: $clicked3, year: 2026)
+                        clickedBtn(clicked: $clicked4, year: 2027)
+
                     }
                     .padding(.bottom, 10)
 
@@ -139,6 +104,30 @@ struct UserAbout: View {
     }
 }
 
+struct clickedBtn: View {
+    @Binding var clicked: Bool
+    var year : Int
+    
+    var body: some View {
+        Button {
+            clicked.toggle()
+        } label: {
+            ZStack {
+                RoundedRectangle(cornerRadius: 30)
+                    .stroke(clicked ? Color("futonPurple") : .black)
+                    .frame(width: 75, height: 34)
+                
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(clicked ? Color("futonPurple") : Color.white.opacity(0))
+                    .frame(width: 75, height: 34)
+                
+                Text(String(year))
+
+            }
+        }
+        .foregroundColor(clicked ? .white : .black)
+    }
+}
 struct UserAbout_Previews: PreviewProvider {
     static var previews: some View {
         UserAbout(currentState: .constant(0), university: .constant(""), graduationYear: .constant(0))

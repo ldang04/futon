@@ -9,6 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct RequestBox: View { // @todo - add a reason for the request
+    var type: Int
     var request: Request
     var id: String
     
@@ -46,11 +47,11 @@ struct RequestBox: View { // @todo - add a reason for the request
             Button {
                 isShowingProfile = true
             } label: {
-                Text("Tap to View")
+                Text("\( type == 0 ? "Pending" : "Tap to View")")
                     .font(.custom("BricolageGrotesque-Medium", size: 17))
                     .padding([.top, .bottom], 7)
                     .padding([.leading, .trailing], 25)
-                    .background(Color("futonNavy"))
+                    .background(type == 0 ? Color.gray : Color("futonNavy"))
                     .cornerRadius(40)
                     .foregroundColor(.white)
             }
