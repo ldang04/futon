@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 
+
 struct HomeView: View {
     @State var searchText = "Monster University"
     @State var isPresented = false
@@ -72,7 +73,7 @@ struct HomeView: View {
             }
             .sheet(isPresented: $isPresented){
                 VStack {
-                    SwipeView(users: [exampleUser1, exampleUser2, exampleUser3])
+                    SwipeView(users: userLists)
                 }
             }
             

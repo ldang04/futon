@@ -140,19 +140,18 @@ struct InfoSection: View {
             
             // prompts
             
-            ForEach(user.prompts ?? [Prompt](), id: \.self.response){ prompt in
                 VStack(alignment: .leading){
-                    Text(prompt.question)
+                    Text(question)
                         .textCase(.uppercase)
                         .font(.system(size: 12))
                         .padding(.bottom, 5)
                     
-                    Text(prompt.response)
+                    Text(answer)
                         .font(.custom("BricolageGrotesque-Regular", size: 22))
                 }
                 .padding(.bottom, 20)
                 .frame(width: 340, height: nil)
-            }
+            
         }
         .padding([.leading, .trailing], 15)
         .padding([.bottom, .top], 15)
@@ -163,6 +162,6 @@ struct InfoSection: View {
 }
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: exampleUser1)
+        ProfileView(user: mainUser)
     }
 }

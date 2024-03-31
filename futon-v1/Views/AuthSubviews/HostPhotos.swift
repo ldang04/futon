@@ -57,7 +57,7 @@ struct HostPhotos: View {
                                     URL(string: "https://i.ytimg.com/vi/0LbOdFhProo/maxresdefault.jpg")!],
                                 tags: ["123sq ft - Single", "Mattress", "Single-use Bathroom", "Shoes-Off", "Clean"],
                                 rating: 4.95,
-                                prompts: UUID().uuidString,
+                                prompts: [UUID().uuidString],
                                 requests: []),
                             prompt: "#1 campus tip",
                             answer: "Do not eat Monster dining hall food"

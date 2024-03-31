@@ -26,7 +26,7 @@ func createUser(user: User, prompt: String, answer: String) async {
             .from("Prompts")
             .insert(
                 Prompt(
-                id: user.prompts,
+                id: user.prompts[0],
                 prompt: prompt,
                 answer: answer)
             )
@@ -45,6 +45,23 @@ func getUserWithId(id: String) async -> User? {
           .from("Users")
           .select()
           .eq("id", value: id)
+          .execute()
+          .value
+        print("Got user successfully", users[0].name)
+        return users[0]
+    } catch {
+        print("Error getting user: \(error)")
+    }
+    return nil
+}
+
+func getUserWithName(name: String) async -> User? {
+    let client = SupabaseClient(supabaseURL: supabaseUrl, supabaseKey: supabaseKey)
+    do {
+        let users: [User] = try await client.database
+          .from("Users")
+          .select()
+          .eq("name", value: name)
           .execute()
           .value
         print("Got user successfully", users[0].name)
@@ -163,4 +180,8 @@ func getUsersBySchool(school: String) async -> [User]? {
         print("Error getting users: \(error)")
     }
     return nil
+}
+
+func attemptLogin() -> Bool {
+    return true
 }

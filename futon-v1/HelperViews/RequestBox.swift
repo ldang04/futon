@@ -10,6 +10,9 @@ import Kingfisher
 
 struct RequestBox: View { // @todo - add a reason for the request
     var request: Request
+    var id: String
+    
+    @State var user = mainUser
     
     @State var viewed = false // @future save conversation status
     
@@ -18,17 +21,17 @@ struct RequestBox: View { // @todo - add a reason for the request
     var body: some View {
         VStack {
             HStack {
-                KFImage(request.user.pfpURL)
+                KFImage(user.pfpURL)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
                     .frame(width: 50)
                 
                 VStack(alignment: .leading) {
-                    Text("Request from \(request.user.name)")
+                    Text("Request from \(user.name)")
                         .font(.custom("BricolageGrotesque-Medium", size: 17))
                     
-                    Text("\(request.user.university) \(String(request.user.graduationYear))")
+                    Text("\(user.university) \(String(user.graduationYear))")
                         .font(.custom("BricolageGrotesque-Regular", size: 15))
                     
                 }
@@ -52,10 +55,15 @@ struct RequestBox: View { // @todo - add a reason for the request
                     .foregroundColor(.white)
             }
             .sheet(isPresented: $isShowingProfile){
-                RequestProfile(user: request.user)
+                RequestProfile(user: user)
             }
             
             Spacer()
+        }
+        .onAppear {
+            Task {
+                user = await getUserWithId(id: id)!
+            }
         }
         .padding(15)
         .frame(width: 366, height: 200)
@@ -70,7 +78,7 @@ struct RequestBox_Previews: PreviewProvider {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
-            RequestBox(request: sampleRequest)
+//            RequestBox(request: Request)
         }
     }
 }

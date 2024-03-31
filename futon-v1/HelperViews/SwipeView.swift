@@ -109,8 +109,8 @@ struct CardView: View {
                 }
                 
                 VStack {
-                    if(!(user.photos?.isEmpty ?? false)){
-                        KFImage(user.photos?[0])
+                    if(!(user.photos.isEmpty ?? false)){
+                        KFImage(user.photos[0])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 330, height: 350)
@@ -131,5 +131,5 @@ struct CardView: View {
 }
 
 #Preview {
-    SwipeView(users: [exampleUser1, exampleUser2, exampleUser3])
+    SwipeView(users: userLists)
 }

@@ -111,11 +111,24 @@ struct Login: View {
                     socialBtns()
                     
                     Button {
-                        if(email.isEmpty || !email.contains("@")){
-                            isLoggedIn = false // throw error
+                        // get substring
+                        var nameSubstring = ""
+                        if let idx = email.firstIndex(of: "@"){
+                            nameSubstring = String(email[..<idx])
                         } else {
-                            isLoggedIn = attemptLogin(email: email)
+                            nameSubstring = "Steve"
                         }
+                        
+                        Task {
+                            mainUser = await getUserWithName(name: nameSubstring)!
+                            question = await getPromptWithUserId(id: mainUser.id)!.prompt
+                            answer = await getPromptWithUserId(id: mainUser.id)!.answer
+                            hostRequests = await getRequestsAsHost(id: mainUser.id)!
+                            guestRequests = await getRequestsAsGuest(id: mainUser.id)!
+                            userLists = await getUsersBySchool(school: "Monsters University")!
+                        }
+                        
+                        isLoggedIn = true
                     } label: {
                         Text("Get started")
                             .foregroundColor(.white)
@@ -148,7 +161,7 @@ struct socialBtns: View { // @future: add OAuth methods
                 .frame(width: 310, height: 37)
             
             HStack {
-                Image("apple_logo")
+//                Image("apple_logo")
                 
                 Spacer()
                 
@@ -168,7 +181,7 @@ struct socialBtns: View { // @future: add OAuth methods
                 .frame(width: 310, height: 37)
             
             HStack {
-                Image("google_logo")
+//                Image("google_logo")
                 
                 Spacer()
                 

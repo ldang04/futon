@@ -70,10 +70,21 @@ struct RequestView: View {
             
                 // Requests
                 if(selected == 1){
-                    ScrollView { // @todo create dynamic forEach
+                    ScrollView { // dynamic forEach
                         VStack {
-                            ForEach(user.requests ?? [], id: \.self.reason){ request in
-                                RequestBox(request: request)
+                            ForEach(hostRequests ?? [], id: \.self.reason){ request in
+                                RequestBox(request: request, id: request.guest)
+                                    .padding(.bottom, 3)
+                            }
+                        }
+                    }
+                    .scrollIndicators(.hidden)
+                    .padding(.top, 10)
+                } else {
+                    ScrollView {
+                        VStack {
+                            ForEach(guestRequests ?? [], id: \.self.reason){ request in
+                                RequestBox(request: request, id: request.host)
                                     .padding(.bottom, 3)
                             }
                         }
@@ -91,6 +102,6 @@ struct RequestView: View {
 
 struct RequestView_Previews: PreviewProvider {
     static var previews: some View {
-        RequestView(user: exampleUser1)
+        RequestView(user: mainUser)
     }
 }

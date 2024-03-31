@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import Supabase
 
 struct ContentView: View {
     @State var isLoggedIn = false
     
     init() { // remove tab bar transparent bg
+        let client = SupabaseClient(supabaseURL: supabaseUrl, supabaseKey: supabaseKey)
+        print("Configured Supabase")
         let transparentAppearence = UITabBarAppearance()
         transparentAppearence.configureWithTransparentBackground() // 🔑
         UITabBar.appearance().standardAppearance = transparentAppearence
     }
     
     var body: some View {
+        
         VStack {
             if(isLoggedIn){
                 MainTabView()
@@ -37,13 +41,13 @@ struct MainTabView: View {
                 HomeView()
                     .tag(0)
                 
-                RequestView(user: exampleUser1) // @todo: load user from server
+                RequestView(user: mainUser) // @todo: load user from server
                     .tag(1)
                 
                 CalendarView()
                     .tag(2)
                 
-                ProfileView(user: exampleUser1) // @todo: load user from server
+                ProfileView(user: mainUser) // @todo: load user from server
                     .tag(3)
             }
             .background(.red)

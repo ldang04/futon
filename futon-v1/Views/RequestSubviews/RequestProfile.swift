@@ -167,6 +167,6 @@ struct RequestProfile: View {
 
 struct RequestProfile_Previews: PreviewProvider {
     static var previews: some View {
-        RequestProfile(user: exampleUser4)
+        RequestProfile(user: mainUser)
     }
 }

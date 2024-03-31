@@ -16,8 +16,8 @@ struct User: Identifiable, Codable {
     var photos: [URL]
     var tags: [String]
     var rating: Double   
-    var prompts: String
-    var requests: [String?]
+    var prompts: [String]
+    var requests: [String]
     
 }
 

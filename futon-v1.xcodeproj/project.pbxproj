@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB4620652BB9561A00D92B91 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = DB4620642BB9561A00D92B91 /* Auth */; };
+		DB4620672BB9561A00D92B91 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = DB4620662BB9561A00D92B91 /* Functions */; };
+		DB4620692BB9561A00D92B91 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = DB4620682BB9561A00D92B91 /* PostgREST */; };
+		DB46206B2BB9561A00D92B91 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = DB46206A2BB9561A00D92B91 /* Realtime */; };
+		DB46206D2BB9561A00D92B91 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = DB46206C2BB9561A00D92B91 /* Storage */; };
+		DB46206F2BB9561A00D92B91 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB46206E2BB9561A00D92B91 /* Supabase */; };
 		FE115AA02BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */; };
 		FE115AA12BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */; };
 		FE115AA22BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */; };
@@ -104,8 +110,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB46206B2BB9561A00D92B91 /* Realtime in Frameworks */,
+				DB4620692BB9561A00D92B91 /* PostgREST in Frameworks */,
+				DB4620672BB9561A00D92B91 /* Functions in Frameworks */,
 				FEC16FA32BB87BE300FFA357 /* WrappingHStack in Frameworks */,
+				DB46206D2BB9561A00D92B91 /* Storage in Frameworks */,
+				DB46206F2BB9561A00D92B91 /* Supabase in Frameworks */,
 				FEC16FA02BB87BD200FFA357 /* Kingfisher in Frameworks */,
+				DB4620652BB9561A00D92B91 /* Auth in Frameworks */,
 				FEF3A7E72BB92B3500DBCCF5 /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +276,12 @@
 				FEC16F9F2BB87BD200FFA357 /* Kingfisher */,
 				FEC16FA22BB87BE300FFA357 /* WrappingHStack */,
 				FEF3A7E62BB92B3500DBCCF5 /* CardStack */,
+				DB4620642BB9561A00D92B91 /* Auth */,
+				DB4620662BB9561A00D92B91 /* Functions */,
+				DB4620682BB9561A00D92B91 /* PostgREST */,
+				DB46206A2BB9561A00D92B91 /* Realtime */,
+				DB46206C2BB9561A00D92B91 /* Storage */,
+				DB46206E2BB9561A00D92B91 /* Supabase */,
 			);
 			productName = "futon-v1";
 			productReference = FEC16F862BB8740900FFA357 /* futon-v1.app */;
@@ -596,6 +614,30 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DB4620642BB9561A00D92B91 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Auth;
+		};
+		DB4620662BB9561A00D92B91 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Functions;
+		};
+		DB4620682BB9561A00D92B91 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PostgREST;
+		};
+		DB46206A2BB9561A00D92B91 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Realtime;
+		};
+		DB46206C2BB9561A00D92B91 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Storage;
+		};
+		DB46206E2BB9561A00D92B91 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Supabase;
+		};
 		FEC16F9F2BB87BD200FFA357 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */;
