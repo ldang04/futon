@@ -50,7 +50,7 @@ struct HostLocation: View {
                         .stroke(.black)
                         .frame(width: 305, height: 50)
                     TextField("", text: $location)
-                        .padding(.leading, 20)
+                        .padding(.leading, 70)
                 }
                 .padding(.bottom, 15)
                 

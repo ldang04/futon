@@ -7,27 +7,30 @@
 
 import Foundation
 
-struct User: Identifiable {
+struct User: Identifiable, Codable {
     var id: String
     var name: String
     var pfpURL: URL
     var university: String
     var graduationYear: Int
-    var photos: [URL]? // optional
+    var photos: [URL]
     var tags: [String]
     var rating: Double   
-    var prompts: [Prompt]?
+    var prompts: String
+    var requests: [String?]
     
-    var requests: [Request]? // optional
 }
 
-struct Prompt {
-    var question: String
-    var response: String
+struct Prompt: Codable {
+    var id: String
+    var prompt: String
+    var answer: String
 }
 
-struct Request { // @todo change to host / visitor vars
-    var user: User // user and host id
+struct Request: Codable { // @todo change to host / visitor vars
+    var id: String
+    var host: String
+    var guest: String
     var dates: String
     var reason: String
 }
