@@ -9,11 +9,12 @@ Tip: Swift has the tendency to omit installing some packages upon clone / pull r
 
 ## Demo & more! 📱
 Watch Futon in action and learn more about our process below:
-[![Watch the video](https://imgur.com/E6abWyW)](https://www.youtube.com)
 
-You can also read more about our project on Devpost: (https://devpost.com/software/futon?ref_content=my-projects-tab&ref_feature=my_projects)link
+[![Watch the video](https://i.imgur.com/E6abWyW.png)](https://www.youtube.com/watch?v=TdhYZinqqF8)
 
-Want to try out our prototype? Here is the Figma: (https://www.figma.com/proto/PJOhpy6Kx0EkrKbNpnmY2x/Futon-(Official)?type=design&node-id=17-396&t=YkZ9IPgmRBjLL0fD-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=17%3A396&show-proto-sidebar=1&mode=design)link
+You can also read more about our project on Devpost: [link](https://devpost.com/software/futon?ref_content=my-projects-tab&ref_feature=my_projects)
+
+Want to try out our prototype? Here is the Figma: [link](https://www.figma.com/proto/PJOhpy6Kx0EkrKbNpnmY2x/Futon-(Official)?type=design&node-id=17-396&t=YkZ9IPgmRBjLL0fD-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=17%3A396&show-proto-sidebar=1&mode=design)
 
 
 Created by Ruby Chang, Linh Dang, Bao To, Michael Roberson for YHack 2024
