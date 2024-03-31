@@ -63,6 +63,7 @@ struct HomeView: View {
                             Image("view_btn")
                         }
                         .foregroundColor(.black)
+                        .offset(y: 30)
                     }
                 }
                 .padding(.bottom, 40)

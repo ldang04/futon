@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HostPhotos: View {
     @Binding var currentState: Int
+    @Binding var university: String
+    @Binding var graduationYear: Int
+    @Binding var tags: [String]
     
     var body: some View {
         ZStack {
@@ -41,7 +44,7 @@ struct HostPhotos: View {
                     .padding(.bottom, 50)
                 
                 Button {
-                    // attempt create user
+                    // @todo function call
                 } label: {
                     Text("Camera Roll")
                         .foregroundColor(.white)
@@ -59,5 +62,5 @@ struct HostPhotos: View {
 }
 
 #Preview {
-    HostPhotos(currentState: .constant(0))
+    HostPhotos(currentState: .constant(0), university: .constant("Monsters University"), graduationYear: .constant(2007), tags: .constant(["etc"]))
 }

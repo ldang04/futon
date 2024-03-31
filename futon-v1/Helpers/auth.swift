@@ -9,6 +9,6 @@ import Foundation
 
 // log in function
 
-func attemptLogin(email: String) -> Bool { // @todo fetch user functionality
+func createUser(email: String) -> Bool { // @todo fetch user functionality
     return true
 }

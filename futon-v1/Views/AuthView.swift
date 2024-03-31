@@ -23,7 +23,6 @@ struct AuthView: View {
     @State var university = ""
     @State var graduationYear = 0
     @State var tags = [String]()
-    @State var prompts = [Prompt]()
     
     var body: some View {
         VStack<AnyView> {
@@ -47,7 +46,7 @@ struct AuthView: View {
                 case 9:
                     return AnyView(HostTags(currentState: $current))
                 case 10:
-                    return AnyView(HostPhotos(currentState: $current))
+                return AnyView(HostPhotos(currentState: $current, university: $university, graduationYear: $graduationYear, tags: $tags))
                 default:
                     return AnyView(Start(currentState: $current))
             }
