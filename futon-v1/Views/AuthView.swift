@@ -15,7 +15,6 @@ struct AuthView: View {
     }
     
     @State var isHosting = false
-    
     @Binding var isLoggedIn: Bool
     
     // User object
@@ -42,67 +41,16 @@ struct AuthView: View {
                 case 5:
                     return AnyView(UserInfo(currentState: $current, tags: $tags))
                 case 6:
-                    return AnyView(UserAbout(currentState: $current)) // UserAbout now takes the place of UserBio
+                return AnyView(UserAbout(currentState: $current, university: $university, graduationYear: $graduationYear)) // UserAbout now takes the place of UserBio
                 case 7:
                     return AnyView(HostLocation(currentState: $current))
-                case 8:
-                    return AnyView(HostRoom(currentState: $current))
                 case 9:
                     return AnyView(HostTags(currentState: $current))
                 case 10:
                     return AnyView(HostPhotos(currentState: $current))
-                case 11:
-                    return AnyView(HostPrompt(currentState: $current))
-                case 12:
-                    return AnyView(HostResponse(currentState: $current))
                 default:
                     return AnyView(Start(currentState: $current))
             }
-        }
-    }
-}
-
-struct UserBio: View {
-    @Binding var currentState: Int
-    var body: some View {
-        ZStack {
-            Text("UserPopUp")
-        }
-    }
-}
-
-struct HostLocation: View {
-    @Binding var currentState: Int
-    var body: some View {
-        ZStack {
-            Text("HostLocation")
-        }
-    }
-}
-
-struct HostRoom: View {
-    @Binding var currentState: Int
-    var body: some View {
-        ZStack {
-            Text("HostRoom")
-        }
-    }
-}
-
-struct HostTags: View {
-    @Binding var currentState: Int
-    var body: some View {
-        ZStack {
-            Text("HostTags")
-        }
-    }
-}
-
-struct HostPhotos: View {
-    @Binding var currentState: Int
-    var body: some View {
-        ZStack {
-            Text("HostPhotos")
         }
     }
 }

@@ -41,6 +41,9 @@
 		FEC16FC12BB87DDC00FFA357 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FC02BB87DDC00FFA357 /* RequestView.swift */; };
 		FEF3A7E42BB92AF700DBCCF5 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3A7E32BB92AF700DBCCF5 /* SwipeView.swift */; };
 		FEF3A7E72BB92B3500DBCCF5 /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3A7E62BB92B3500DBCCF5 /* CardStack */; };
+		FEF3A7E92BB941E700DBCCF5 /* HostLocation .swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3A7E82BB941E700DBCCF5 /* HostLocation .swift */; };
+		FEF3A7EB2BB9451100DBCCF5 /* HostTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3A7EA2BB9451100DBCCF5 /* HostTags.swift */; };
+		FEF3A7ED2BB9496C00DBCCF5 /* HostPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3A7EC2BB9496C00DBCCF5 /* HostPhotos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -91,6 +94,9 @@
 		FEC16FC02BB87DDC00FFA357 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		FEC16FC92BB87EF700FFA357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FEF3A7E32BB92AF700DBCCF5 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		FEF3A7E82BB941E700DBCCF5 /* HostLocation .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HostLocation .swift"; sourceTree = "<group>"; };
+		FEF3A7EA2BB9451100DBCCF5 /* HostTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTags.swift; sourceTree = "<group>"; };
+		FEF3A7EC2BB9496C00DBCCF5 /* HostPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostPhotos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,9 @@
 				FEC16FAE2BB87D1200FFA357 /* HostQ.swift */,
 				FE115AA72BB892AE00AB66C1 /* UserInfo.swift */,
 				FE115AAB2BB8B48700AB66C1 /* UserAbout.swift */,
+				FEF3A7E82BB941E700DBCCF5 /* HostLocation .swift */,
+				FEF3A7EA2BB9451100DBCCF5 /* HostTags.swift */,
+				FEF3A7EC2BB9496C00DBCCF5 /* HostPhotos.swift */,
 			);
 			path = AuthSubviews;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 				FE115AA82BB892AE00AB66C1 /* UserInfo.swift in Sources */,
 				FEC16FA92BB87CBF00FFA357 /* RequestBox.swift in Sources */,
 				FEC16FC12BB87DDC00FFA357 /* RequestView.swift in Sources */,
+				FEF3A7E92BB941E700DBCCF5 /* HostLocation .swift in Sources */,
 				FEC16FBB2BB87D9000FFA357 /* HomeView.swift in Sources */,
 				FEC16FB52BB87D4600FFA357 /* Start.swift in Sources */,
 				FEC16FB72BB87D5F00FFA357 /* AuthView.swift in Sources */,
@@ -336,6 +346,7 @@
 				FEC16FBD2BB87DA200FFA357 /* ProfileView.swift in Sources */,
 				FE115AAC2BB8B48700AB66C1 /* UserAbout.swift in Sources */,
 				FEC16FB92BB87D7B00FFA357 /* CalendarView.swift in Sources */,
+				FEF3A7ED2BB9496C00DBCCF5 /* HostPhotos.swift in Sources */,
 				FEF3A7E42BB92AF700DBCCF5 /* SwipeView.swift in Sources */,
 				FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */,
 				FE2DC24C2BB882E700264452 /* Test.swift in Sources */,
@@ -344,6 +355,7 @@
 				FEC16FAF2BB87D1200FFA357 /* HostQ.swift in Sources */,
 				FEC16FB12BB87D2A00FFA357 /* Login.swift in Sources */,
 				FEC16FA72BB87CA800FFA357 /* GlobalHelpers.swift in Sources */,
+				FEF3A7EB2BB9451100DBCCF5 /* HostTags.swift in Sources */,
 				FEC16F8A2BB8740900FFA357 /* futon_v1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

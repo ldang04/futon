@@ -60,8 +60,7 @@ struct HomeView: View {
                         isPresented = true
                     } label: {
                         VStack {
-                            Text("Tap to view hosts")
-                            Image("chevron_up")
+                            Image("view_btn")
                         }
                         .foregroundColor(.black)
                     }
