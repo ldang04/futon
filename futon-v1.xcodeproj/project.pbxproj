@@ -39,6 +39,8 @@
 		FEC16FBD2BB87DA200FFA357 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FBC2BB87DA200FFA357 /* ProfileView.swift */; };
 		FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FBE2BB87DB900FFA357 /* RequestProfile.swift */; };
 		FEC16FC12BB87DDC00FFA357 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FC02BB87DDC00FFA357 /* RequestView.swift */; };
+		FEF3A7E42BB92AF700DBCCF5 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3A7E32BB92AF700DBCCF5 /* SwipeView.swift */; };
+		FEF3A7E72BB92B3500DBCCF5 /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3A7E62BB92B3500DBCCF5 /* CardStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -88,6 +90,7 @@
 		FEC16FBE2BB87DB900FFA357 /* RequestProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProfile.swift; sourceTree = "<group>"; };
 		FEC16FC02BB87DDC00FFA357 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		FEC16FC92BB87EF700FFA357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FEF3A7E32BB92AF700DBCCF5 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			files = (
 				FEC16FA32BB87BE300FFA357 /* WrappingHStack in Frameworks */,
 				FEC16FA02BB87BD200FFA357 /* Kingfisher in Frameworks */,
+				FEF3A7E72BB92B3500DBCCF5 /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +171,7 @@
 			children = (
 				FEC16FA82BB87CBF00FFA357 /* RequestBox.swift */,
 				FE115AA92BB8933200AB66C1 /* PopUp.swift */,
+				FEF3A7E32BB92AF700DBCCF5 /* SwipeView.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			packageProductDependencies = (
 				FEC16F9F2BB87BD200FFA357 /* Kingfisher */,
 				FEC16FA22BB87BE300FFA357 /* WrappingHStack */,
+				FEF3A7E62BB92B3500DBCCF5 /* CardStack */,
 			);
 			productName = "futon-v1";
 			productReference = FEC16F862BB8740900FFA357 /* futon-v1.app */;
@@ -282,6 +288,7 @@
 				FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				FEC16FA12BB87BE300FFA357 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
 				FEB513542BB91AB700823559 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				FEF3A7E52BB92B3500DBCCF5 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
 			);
 			productRefGroup = FEC16F872BB8740900FFA357 /* Products */;
 			projectDirPath = "";
@@ -329,6 +336,7 @@
 				FEC16FBD2BB87DA200FFA357 /* ProfileView.swift in Sources */,
 				FE115AAC2BB8B48700AB66C1 /* UserAbout.swift in Sources */,
 				FEC16FB92BB87D7B00FFA357 /* CalendarView.swift in Sources */,
+				FEF3A7E42BB92AF700DBCCF5 /* SwipeView.swift in Sources */,
 				FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */,
 				FE2DC24C2BB882E700264452 /* Test.swift in Sources */,
 				FEC16FB32BB87D3600FFA357 /* Register.swift in Sources */,
@@ -565,6 +573,14 @@
 				kind = branch;
 			};
 		};
+		FEF3A7E52BB92B3500DBCCF5 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -577,6 +593,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEC16FA12BB87BE300FFA357 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
 			productName = WrappingHStack;
+		};
+		FEF3A7E62BB92B3500DBCCF5 /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3A7E52BB92B3500DBCCF5 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
+			productName = CardStack;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
