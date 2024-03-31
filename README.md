@@ -9,7 +9,7 @@ Tip: Swift has the tendency to omit installing some packages upon clone / pull r
 
 ## Demo & more! 📱
 Watch Futon in action and learn more about our process below:
-[![Watch the video](https://i.imgur.com/BJUnqtq.png)](https://www.youtube.com/watch?v=TdhYZinqqF8)
+[![Watch the video](https://imgur.com/E6abWyW)](https://www.youtube.com)
 
 You can also read more about our project on Devpost: ___
 
