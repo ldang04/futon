@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB709AE72BB8F6D8003EC464 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AE62BB8F6D8003EC464 /* Auth */; };
-		DB709AE92BB8F6D8003EC464 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AE82BB8F6D8003EC464 /* Functions */; };
-		DB709AEB2BB8F6D8003EC464 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AEA2BB8F6D8003EC464 /* PostgREST */; };
-		DB709AED2BB8F6D8003EC464 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AEC2BB8F6D8003EC464 /* Realtime */; };
-		DB709AEF2BB8F6D8003EC464 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AEE2BB8F6D8003EC464 /* Storage */; };
-		DB709AF12BB8F6D8003EC464 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AF02BB8F6D8003EC464 /* Supabase */; };
-		DB709AF42BB8F9E2003EC464 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DB709AF32BB8F9E2003EC464 /* HorizonCalendar */; };
 		FE115AA02BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */; };
 		FE115AA12BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9A2BB88C8A00AB66C1 /* BricolageGrotesque-ExtraLight.ttf */; };
 		FE115AA22BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE115A9B2BB88C8A00AB66C1 /* BricolageGrotesque-Medium.ttf */; };
@@ -47,6 +40,20 @@
 		FEC16FBF2BB87DB900FFA357 /* RequestProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FBE2BB87DB900FFA357 /* RequestProfile.swift */; };
 		FEC16FC12BB87DDC00FFA357 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC16FC02BB87DDC00FFA357 /* RequestView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		FEB5134F2BB9185700823559 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		FE115A992BB88C8A00AB66C1 /* BricolageGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-Regular.ttf"; sourceTree = "<group>"; };
@@ -90,24 +97,25 @@
 			files = (
 				FEC16FA32BB87BE300FFA357 /* WrappingHStack in Frameworks */,
 				FEC16FA02BB87BD200FFA357 /* Kingfisher in Frameworks */,
-				DB709AEF2BB8F6D8003EC464 /* Storage in Frameworks */,
-				DB709AE92BB8F6D8003EC464 /* Functions in Frameworks */,
-				DB709AF42BB8F9E2003EC464 /* HorizonCalendar in Frameworks */,
-				DB709AF12BB8F6D8003EC464 /* Supabase in Frameworks */,
-				DB709AED2BB8F6D8003EC464 /* Realtime in Frameworks */,
-				DB709AE72BB8F6D8003EC464 /* Auth in Frameworks */,
-				DB709AEB2BB8F6D8003EC464 /* PostgREST in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEB5134E2BB9179800823559 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEC16F7D2BB8740900FFA357 = {
 			isa = PBXGroup;
 			children = (
 				FEC16F882BB8740900FFA357 /* futon-v1 */,
 				FEC16F872BB8740900FFA357 /* Products */,
+				FEB5134E2BB9179800823559 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +241,7 @@
 				FEC16F842BB8740900FFA357 /* Resources */,
 			);
 			buildRules = (
+				FEB5134F2BB9185700823559 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -240,13 +249,6 @@
 			packageProductDependencies = (
 				FEC16F9F2BB87BD200FFA357 /* Kingfisher */,
 				FEC16FA22BB87BE300FFA357 /* WrappingHStack */,
-				DB709AE62BB8F6D8003EC464 /* Auth */,
-				DB709AE82BB8F6D8003EC464 /* Functions */,
-				DB709AEA2BB8F6D8003EC464 /* PostgREST */,
-				DB709AEC2BB8F6D8003EC464 /* Realtime */,
-				DB709AEE2BB8F6D8003EC464 /* Storage */,
-				DB709AF02BB8F6D8003EC464 /* Supabase */,
-				DB709AF32BB8F9E2003EC464 /* HorizonCalendar */,
 			);
 			productName = "futon-v1";
 			productReference = FEC16F862BB8740900FFA357 /* futon-v1.app */;
@@ -279,8 +281,7 @@
 			packageReferences = (
 				FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				FEC16FA12BB87BE300FFA357 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
-				DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */,
-				DB709AF22BB8F9E2003EC464 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+				FEB513542BB91AB700823559 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			productRefGroup = FEC16F872BB8740900FFA357 /* Products */;
 			projectDirPath = "";
@@ -540,20 +541,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+		FEB513542BB91AB700823559 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.0;
-			};
-		};
-		DB709AF22BB8F9E2003EC464 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/HorizonCalendar";
-			requirement = {
-				branch = master;
-				kind = branch;
+				minimumVersion = 2.0.0;
 			};
 		};
 		FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -575,41 +568,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DB709AE62BB8F6D8003EC464 /* Auth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Auth;
-		};
-		DB709AE82BB8F6D8003EC464 /* Functions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Functions;
-		};
-		DB709AEA2BB8F6D8003EC464 /* PostgREST */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = PostgREST;
-		};
-		DB709AEC2BB8F6D8003EC464 /* Realtime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Realtime;
-		};
-		DB709AEE2BB8F6D8003EC464 /* Storage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Storage;
-		};
-		DB709AF02BB8F6D8003EC464 /* Supabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AE52BB8F6D8003EC464 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Supabase;
-		};
-		DB709AF32BB8F9E2003EC464 /* HorizonCalendar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DB709AF22BB8F9E2003EC464 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
-			productName = HorizonCalendar;
-		};
 		FEC16F9F2BB87BD200FFA357 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FEC16F9E2BB87BD200FFA357 /* XCRemoteSwiftPackageReference "Kingfisher" */;
